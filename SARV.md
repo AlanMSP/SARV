@@ -18,6 +18,12 @@ Tambien están los ataques activos, que normalmente suceden despues de los ataqu
 
 La obtención de contenidos de mensajes se puede ejemplificar muy fácilmente, un mensaje, una llamada telefónica o un archivo pueden contener información confidencial, es crucial evitar que un oponente conozca dichos contenidos.
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/1.png?token=AOVXEUG77OGLBRNR32CYJELAX2MSW)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/2.png?token=AOVXEUDPGHM4OOQTPLMJGELAX2M2G)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/3.png?token=AOVXEUDCCYJ437TUFHRNJZ3AX2M3O)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/4.png?token=AOVXEUDF2KGAGD653ILXPWLAX2M4W)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/5.png?token=AOVXEUD5PVT6UEZ3MMQ55J3AX2M6A)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/6.png?token=AOVXEUHKVZXDJ3XHONI7WFTAX2M7Q)
+
     
     
     

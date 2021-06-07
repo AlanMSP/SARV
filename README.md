@@ -14,20 +14,20 @@ Los ataques a la seguridad tienen cómo característica principal ser un intento
   
 A este tipo de ataques se les denominan con dos términos, activos y pasivos. Los pasivos se enfocan en observar o analizar cierta transimisión, pero no afectan a los recursos de la misma.
 
-(ATAQUES PASIVOS)
+### Ataques pasivos
  
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/1.png)
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/2.png)
 
-(ATAQUES ACTIVOS)
+### Ataques activos
+
+Tambien están los ataques activos, que normalmente suceden despues de los ataques pasivos. A diferencia de los ataques pasivos, estos sí intentan alterar los recursos del sistema o afectar su funcionamiento. Los ataques activos son resultado de una "exploración" llevada a cabo con los resultados de múltiples ataques pasivos. Se puede intentar tomar ventaja de un proceso o función en especifico y comprometer la integridad del sistema.
+
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/3.png)
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/4.png)
-
-Tambien están los ataques activos, que normalmente suceden despues de los ataques pasivos. Por el contrario, estos si intentan alterar los recursos del sistema o afectar su funcionamiento. Los ataques activos son resultado de una "exploración" llevada a cabo con los resultados de múltiples ataques pasivos. Se puede intentar tomar ventaja de un proceso o función en especifico y comprometer la integridad del sistema.
-
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/5.png)
 

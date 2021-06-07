@@ -10,16 +10,17 @@ La importancia del modelo OSI en este enfoque se debe a la naturaleza de las ame
 
 ###   1.2. Ataques a la seguridad
 <br>
-Los ataques a la seguridad tienen cómo característica principal ser un intento de vulnerar al proceso "normal" de una red. Asímismo, se dan en forma de escucha o de observación no autorizadas de las transmisiones. Se realiza el atentado y no hay mucha (si no es que ninguna) evidencia de lo ocurrido. La obtención de contenidos de mensajes se puede ejemplificar muy fácilmente, un mensaje, una llamada telefónica o un archivo pueden contener información confidencial, es crucial evitar que un oponente conozca dichos contenidos.
+Los ataques a la seguridad tienen cómo característica principal ser un intento de vulnerar al proceso "normal" de un sistema o de información. Asímismo, se dan en forma de escucha o de observación no autorizadas de las transmisiones. Se realiza el atentado y no hay mucha (si no es que ninguna) evidencia de lo ocurrido. La obtención de contenidos de mensajes se puede ejemplificar muy fácilmente, un mensaje, una llamada telefónica o un archivo pueden contener información confidencial, es crucial evitar que un oponente conozca dichos contenidos.
   
-A este tipo de ataques se les denominan con dos términos, activos y pasivos. Los pasivos se enfocan en conocer o hacer uso de información del sistema, pero no afecta a los recursos del mismo.
-   
+A este tipo de ataques se les denominan con dos términos, activos y pasivos. Los pasivos se enfocan en observar o analizar cierta transimisión, pero no afectan a los recursos de la misma.
+
+(ATAQUES PASIVOS)
  
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/1.png)
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/2.png)
 
-(ATAQUES PASIVOS)
+(ATAQUES ACTIVOS)
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/3.png)
 
@@ -27,7 +28,6 @@ A este tipo de ataques se les denominan con dos términos, activos y pasivos. Lo
 
 Tambien están los ataques activos, que normalmente suceden despues de los ataques pasivos. Por el contrario, estos si intentan alterar los recursos del sistema o afectar su funcionamiento. Los ataques activos son resultado de una "exploración" llevada a cabo con los resultados de múltiples ataques pasivos. Se puede intentar tomar ventaja de un proceso o función en especifico y comprometer la integridad del sistema.
 
-(ATAQUES ACTIVOS)
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/5.png)
 

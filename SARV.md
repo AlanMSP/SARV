@@ -10,12 +10,13 @@ La importancia del modelo OSI en este enfoque se debe a la naturaleza de las ame
 
 ###   1.2. Ataques a la seguridad
 <br>
-Los ataques a la seguridad tienen cómo característica principal ser un intento de vulnerar al proceso "normal" de una red. Hay tanto ataques pasivos, que a grandes rasgos son dificiles de detectar y los datos en cuestión prácticamente nunca son alterados. Si no que se realiza el atentado y no hay mucha (si no es que ninguna) evidencia de lo ocurrido
-<br>
-<br>
+Los ataques a la seguridad tienen cómo característica principal ser un intento de vulnerar al proceso "normal" de una red. Asímismo, se dan en forma de escucha o de observación no autorizadas de las transmisiones. Se realiza el atentado y no hay mucha (si no es que ninguna) evidencia de lo ocurrido.
+   
+   
 Tambien están los ataques activos, que normalmente suceden despues de los ataques pasivos. Los ataques pasivos son resultado de una "exploración" llevada a cabo con los resultados de múltiples ataques pasivos. Se puede intentar tomar ventaja de un proceso o función en especifico y comprometer la integridad del sistema.
-<br>
-<br>
+    
+    
+    
 
 ###   1.3. Servicios de seguridad
 <br>

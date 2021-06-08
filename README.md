@@ -39,7 +39,7 @@ Tambien están los ataques activos, que normalmente suceden despues de los ataqu
 
 ###   1.3. Servicios de seguridad
 <br>
-Un servicio de seguridad es un proceso que tiene como tarea principal brindar protección especial a los recursos del sistema, a menudo, los servicios de seguridad forman parte de un mencanismo de seguridad. En base a la vulnerabilidad de los datos a compartir, las consecuencias en caso de que la información se comprometa y el costo de aplicación de un mecanismo de seguridad se implementan (dentro del mecanismo) una serie de servicios de seguridad que tienen como tarea principal brindarle una protección especial a los recursos del sistema. 
+En base a la vulnerabilidad de los datos a compartir, las consecuencias en caso de que la información se comprometa y el costo de aplicación de un mecanismo de seguridad se implementan (dentro del mecanismo) una serie de servicios de seguridad que tienen como tarea principal brindarle una protección especial a los recursos del sistema. 
 <br>
 <br>
 Algunos ejemplos serían:
@@ -114,4 +114,53 @@ No se puede hablar de seguridad sin mencionar las intrusiones que consisten en i
 <br>
 <br>
 <li> Amenazas al acceso de información: captura o alteración de datos por parte de usuarios externos.
-<li> Amenazas al servicio: explotación de fallos del servicio para impedir el uso por parte de usuarios legítimos.
+<li> Amenazas al servicio: explotación de fallos del servicio para impedir el uso por parte de usuarios legítimos.   
+<br>
+<br>
+
+### 1.6 Estándares de internet y la Sociedad Internet.
+
+<br>
+La Sociedad Internet es una organización que se encarga del funcionamiento y estandarización de internet. Dentro de este ámbito existen 3 organizaciones responsables del desarrollo y publicación de los estándares: 
+
+<br>
+  
+- IAB: responsable de definir la arquitectura general de internet.
+- IETF: encargada del desarrollo e ingeniería de protocolos en internet.
+- IESG: responsable de la gestión técnica de las actividades de la IETF y del proceso de estándares de internet.
+
+<br>
+  
+#### El proceso de estandarización
+<br>
+  
+La IETF crea Borradores de Internet, los cuales son borradores de documentos de especificaciones en desarrollo que se mantendrán hasta 6 meses en revisión. Después de ese periodo, la IESG es quien determinará si el borrador se publicará como RFC, y es la IETF quien hará o no la publicación. Para que se aprueben como estándares, las especificaciones deben cumplir con los siguientes requisitos: 
+
+<br>
+  
+- Ser estable y comprensible.
+- Ser técnicamente competente.
+- Tener implementaciones múltiples, independientes e interoperativas con una experiencia operativa sustancial.
+- Tener apoyo público significativo.
+- Ser reconocidamente útil en algunas o en todas las partes de internet.
+  
+<br>
+  
+#### Categorías de estándares de internet
+  
+<br>
+  
+Se dividen en dos categorias:
+
+<br>
+  
+- Especificación técnica: define un protocolo, servicio, procedimiento, convención o formato.
+- Informe de aplicabilidad: especifica cómo y en qué circunstancias una o más especificaciones técnicas pueden aplicarse para posibilitar una determinada capacidad de Internet.
+
+<br>
+ 
+#### Otros tipos de RFC
+  
+<br>
+  
+Existen algunos RFC que no se convierten en estándares de internet, como el BCP, los RFC experimentales y los RFC informativos. 

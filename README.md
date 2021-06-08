@@ -39,7 +39,7 @@ Tambien están los ataques activos, que normalmente suceden despues de los ataqu
 
 ###   1.3. Servicios de seguridad
 <br>
-En base a la vulnerabilidad de los datos a compartir, las consecuencias en caso de que la información se comprometa y el costo de aplicación de un mecanismo de seguridad se implementan (dentro del mecanismo) una serie de servicios de seguridad que tienen como tarea principal brindarle una protección especial a los recursos del sistema. 
+Un servicio de seguridad es un proceso que tiene como tarea principal brindar protección especial a los recursos del sistema, a menudo, los servicios de seguridad forman parte de un mencanismo de seguridad. En base a la vulnerabilidad de los datos a compartir, las consecuencias en caso de que la información se comprometa y el costo de aplicación de un mecanismo de seguridad se implementan (dentro del mecanismo) una serie de servicios de seguridad que tienen como tarea principal brindarle una protección especial a los recursos del sistema. 
 <br>
 <br>
 Algunos ejemplos serían:

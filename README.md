@@ -134,7 +134,7 @@ La Sociedad Internet es una organización que se encarga del funcionamiento y es
 <li> IAB: responsable de definir la arquitectura general de internet.
 <li> IETF: encargada del desarrollo e ingeniería de protocolos en internet.
 <li> IESG: responsable de la gestión técnica de las actividades de la IETF y del proceso de estándares de internet.
-
+<br>
 <br>
   
 #### El proceso de estandarización
@@ -148,7 +148,7 @@ La IETF crea Borradores de Internet, los cuales son borradores de documentos de 
 <li> Tener implementaciones múltiples, independientes e interoperativas con una experiencia operativa sustancial.
 <li> Tener apoyo público significativo.
 <li> Ser reconocidamente útil en algunas o en todas las partes de internet.
-  
+<br>
 <br>
   
 #### Categorías de estándares de internet
@@ -159,6 +159,7 @@ Se dividen en dos categorias:
   
 <li> Especificación técnica: define un protocolo, servicio, procedimiento, convención o formato.
 <li> Informe de aplicabilidad: especifica cómo y en qué circunstancias una o más especificaciones técnicas pueden aplicarse para posibilitar una determinada capacidad de Internet.
+<br>
 <br>
  
 #### Otros tipos de RFC

@@ -39,6 +39,13 @@ Tambien están los ataques activos, que normalmente suceden despues de los ataqu
 
 ###   1.3. Servicios de seguridad
 <br>
+
+X.800 es una recomendación de las características básicas que deben ser consideradas cuando se quiere conectar una computadora con otras. No es una especificación de implementación, sino una descripción de los servicios de seguridad básicos que pueden ser aplicados cuando es necesario proteger la comunicación entre sistemas.
+<br>
+
+El RFC 2828 trata de las definiciones de un conjunto de abreviaciones, términos yrecomendaciones para el uso de una terminología relacionada a la seguridad de los sistemas deinformación.
+<br> 
+
 En base a la vulnerabilidad de los datos a compartir, las consecuencias en caso de que la información se comprometa y el costo de aplicación de un mecanismo de seguridad se implementan (dentro del mecanismo) una serie de servicios de seguridad que tienen como tarea principal brindarle una protección especial a los recursos del sistema. 
 <br>
 <br>
@@ -119,15 +126,14 @@ No se puede hablar de seguridad sin mencionar las intrusiones que consisten en i
 <br>
 
 ### 1.6 Estándares de internet y la Sociedad Internet.
-
 <br>
+ 
 La Sociedad Internet es una organización que se encarga del funcionamiento y estandarización de internet. Dentro de este ámbito existen 3 organizaciones responsables del desarrollo y publicación de los estándares: 
-
 <br>
-  
-- IAB: responsable de definir la arquitectura general de internet.
-- IETF: encargada del desarrollo e ingeniería de protocolos en internet.
-- IESG: responsable de la gestión técnica de las actividades de la IETF y del proceso de estándares de internet.
+
+<li> IAB: responsable de definir la arquitectura general de internet.
+<li> IETF: encargada del desarrollo e ingeniería de protocolos en internet.
+<li> IESG: responsable de la gestión técnica de las actividades de la IETF y del proceso de estándares de internet.
 
 <br>
   
@@ -135,32 +141,27 @@ La Sociedad Internet es una organización que se encarga del funcionamiento y es
 <br>
   
 La IETF crea Borradores de Internet, los cuales son borradores de documentos de especificaciones en desarrollo que se mantendrán hasta 6 meses en revisión. Después de ese periodo, la IESG es quien determinará si el borrador se publicará como RFC, y es la IETF quien hará o no la publicación. Para que se aprueben como estándares, las especificaciones deben cumplir con los siguientes requisitos: 
-
 <br>
   
-- Ser estable y comprensible.
-- Ser técnicamente competente.
-- Tener implementaciones múltiples, independientes e interoperativas con una experiencia operativa sustancial.
-- Tener apoyo público significativo.
-- Ser reconocidamente útil en algunas o en todas las partes de internet.
+<li> Ser estable y comprensible.
+<li> Ser técnicamente competente.
+<li> Tener implementaciones múltiples, independientes e interoperativas con una experiencia operativa sustancial.
+<li> Tener apoyo público significativo.
+<li> Ser reconocidamente útil en algunas o en todas las partes de internet.
   
 <br>
   
 #### Categorías de estándares de internet
-  
 <br>
   
 Se dividen en dos categorias:
-
 <br>
   
-- Especificación técnica: define un protocolo, servicio, procedimiento, convención o formato.
-- Informe de aplicabilidad: especifica cómo y en qué circunstancias una o más especificaciones técnicas pueden aplicarse para posibilitar una determinada capacidad de Internet.
-
+<li> Especificación técnica: define un protocolo, servicio, procedimiento, convención o formato.
+<li> Informe de aplicabilidad: especifica cómo y en qué circunstancias una o más especificaciones técnicas pueden aplicarse para posibilitar una determinada capacidad de Internet.
 <br>
  
 #### Otros tipos de RFC
-  
 <br>
   
 Existen algunos RFC que no se convierten en estándares de internet, como el BCP, los RFC experimentales y los RFC informativos. 

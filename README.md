@@ -187,7 +187,7 @@ En nuestra primera etapa se convierte nuestro texto plano a formato binario, se 
   
 Aquí podemos observar el código de las operaciones principales de nuestra primera etapa:
 
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1ops.png" width="200" height="200">
+<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1ops.png" width="200" height="150">
   
 ### Segunda etapa
   

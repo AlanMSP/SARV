@@ -184,9 +184,13 @@ Mensaje a cifrar: "OK"
 Para el cifrado Feistel se tiene como entrada un texto plano (de 16 bits para este ejemplo) y se generan 3 llaves aleatorias (K1, K2 y K3), las cuales se usarán posteriormente. 
 
 En nuestra primera etapa se convierte nuestro texto plano a formato binario, se divide a la mitad nuestra cantidad de bits y se asignan nuestras mitades a dos variables. Una vez hecho esto, nuestra mitad derecha (R1) realiza una operación lógica XOR con nuestra primera llave generada (K1) y se guarda el resultado en una variable llamada "f1". Con f1 se realiza nuevamente una operación lógica XOR con la mitad izquierda (L1) y guardamos nuestro resultado en R2. Finalmente, en L2 se guardan los bits que teníamos en R1.
-  
-Aquí podemos observar el código de las operaciones principales de nuestra primera etapa:
 
+#### Función para generar llaves
+  
+<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/funckey.png" width="200" height="150">
+
+#### Operaciones de nuestra primera etapa
+  
 <img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1ops.png" width="200" height="150">
   
 ### Segunda etapa

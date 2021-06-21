@@ -167,7 +167,7 @@ Se dividen en dos categorias:
   
 Existen algunos RFC que no se convierten en estándares de internet, como el BCP, los RFC experimentales y los RFC informativos. 
   
-### Cifrado Feistel
+## Cifrado Feistel
   
 Mensaje a cifrar: "OK"
 <br>
@@ -177,7 +177,7 @@ Mensaje a cifrar: "OK"
   
 "K": 01001011 
   
-#### Primera etapa
+### Primera etapa
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1.png)
   
@@ -187,9 +187,9 @@ En nuestra primera etapa se convierte nuestro texto plano a formato binario, se 
   
 Aquí podemos observar el código de las operaciones principales de nuestra primera etapa:
 
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1code.png" width="200" height="200">
+<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1ops.png" width="200" height="200">
   
-#### Segunda etapa
+### Segunda etapa
   
   
   
@@ -199,7 +199,7 @@ Aquí podemos observar el código de las operaciones principales de nuestra prim
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel2.png)
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel3.png)
   
-  #### Tercera etapa
+  ### Tercera etapa
   
   
 

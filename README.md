@@ -170,7 +170,11 @@ Existen algunos RFC que no se convierten en estándares de internet, como el BCP
 ### Cifrado Feistel
   
 Mensaje a cifrar: "OK"
+<br>
+  
 "O": 01001111 
+<br> 
+  
 "K": 01001011 
   
 #### Primera etapa
@@ -183,7 +187,7 @@ En nuestra primera etapa se convierte nuestro texto plano a formato binario, se 
   
 Aquí podemos observar el código de las operaciones principales de nuestra primera etapa:
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1code.png =250x250)
+<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1code.png" width="250" height="250">
   
 #### Segunda etapa
 

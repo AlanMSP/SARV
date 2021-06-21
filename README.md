@@ -191,19 +191,19 @@ Aquí podemos observar el código de las operaciones principales de nuestra prim
   
 ### Segunda etapa
   
-  
+  ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel2.png)
+
   
  Para la segunda etapa, recordemos que nuestra R1 de la primera etapa ha sido asignada como nuestra L2. Asimismo, nuestro R2 necesario para efectuar esta segunda etapa es el resultado del XOR realizado entre f1 y L1. Como primer paso, R2 es asignado como L3 para el siguiente paso, en segundo lugar se realiza un XOR entre ese mismo R2 y nuestra segunda llave aleatoria (K2). Guardando esté resultado y asignandolo como F2. Entre nustra nueva f2 y L2, se realiza un XOR para poder así obtener nuestro R3 para la tercer etapa.
 
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel2.png)
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel3.png)
-  
   ### Tercera etapa
+  
+    ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel3.png)
+
   
   En nuestra tercer etapa, se realiza un XOR entre R3 y nuestra tercera llave aleatoria (K3) y se guarda como F3. Éste mismo valor inicial de R3 es asignado a L4 para etapas posteriores. Por otro lado, se realiza un XOR entre L3 y F3, para así obtener cómo resultado nuestra última variante de R, R4. Tanto L4 como R4 ahora son cadenas de carácteres cifrados de 8 bits.
 
-  
   
   
 

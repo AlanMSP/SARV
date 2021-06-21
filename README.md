@@ -156,7 +156,7 @@ La IETF crea Borradores de Internet, los cuales son borradores de documentos de 
   
 Se dividen en dos categorias:
 <br>
-  
+   
 <li> Especificación técnica: define un protocolo, servicio, procedimiento, convención o formato.
 <li> Informe de aplicabilidad: especifica cómo y en qué circunstancias una o más especificaciones técnicas pueden aplicarse para posibilitar una determinada capacidad de Internet.
 <br>
@@ -166,3 +166,9 @@ Se dividen en dos categorias:
 <br>
   
 Existen algunos RFC que no se convierten en estándares de internet, como el BCP, los RFC experimentales y los RFC informativos. 
+  
+### Feistel
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel2.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel3.png)

@@ -169,6 +169,10 @@ Existen algunos RFC que no se convierten en estándares de internet, como el BCP
   
 ### Cifrado Feistel
   
+Mensaje a cifrar: "OK"
+"O": 01001111 
+"K": 01001011 
+  
 #### Primera etapa
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1.png)

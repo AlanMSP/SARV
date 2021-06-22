@@ -187,7 +187,7 @@ En nuestra primera etapa se convierte nuestro texto plano a formato binario, se 
 
 #### Función para generar llaves
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/funckey.png" width="200" height="150">
+<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/funckey.png" width="300" height="250">
 
 #### Operaciones de nuestra primera etapa
   

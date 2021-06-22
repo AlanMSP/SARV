@@ -222,4 +222,3 @@ En nuestra tercer etapa, se realiza un XOR entre R3 y nuestra tercera llave alea
 #### Operaciones de nuestra tercera etapa
   
  ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel3ops.png)
-

@@ -187,19 +187,19 @@ En nuestra primera etapa se convierte nuestro texto plano a formato binario, se 
 
 #### Función para generar llaves
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/Keycode.png" width="300" height="250">
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Keycode.png)
   
 #### Función para convertir texto plano a binario
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/TxtBincode.png" width="350" height="400">
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/TxtBincode.png)
   
 #### Función XOR
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/XORcode.png" width="300" height="250">
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/XORcode.png)
 
 #### Operaciones de nuestra primera etapa
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1ops.png" width="150" height="100">
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel1ops.png)
   
 ### Segunda etapa
   
@@ -210,16 +210,16 @@ En nuestra primera etapa se convierte nuestro texto plano a formato binario, se 
 
 #### Operaciones de nuestra segunda etapa
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel2ops.png" width="150" height="100">
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel2ops.png)
 
   ### Tercera etapa
   
- ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel3.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel3.png)
 
   
-  En nuestra tercer etapa, se realiza un XOR entre R3 y nuestra tercera llave aleatoria (K3) y se guarda como F3. Éste mismo valor inicial de R3 es asignado a L4 para etapas posteriores. Por otro lado, se realiza un XOR entre L3 y F3, para así obtener cómo resultado nuestra última variante de R, R4. Tanto L4 como R4 ahora son cadenas de carácteres cifrados de 8 bits. 
+En nuestra tercer etapa, se realiza un XOR entre R3 y nuestra tercera llave aleatoria (K3) y se guarda como F3. Éste mismo valor inicial de R3 es asignado a L4 para etapas posteriores. Por otro lado, se realiza un XOR entre L3 y F3, para así obtener cómo resultado nuestra última variante de R, R4. Tanto L4 como R4 ahora son cadenas de carácteres cifrados de 8 bits. 
   
 #### Operaciones de nuestra tercera etapa
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel3ops.png" width="150" height="100">
+ ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/nivel3ops.png)
 

@@ -25,13 +25,13 @@ A este tipo de ataques se les denominan con dos términos, activos y pasivos. Lo
 Tambien están los ataques activos, que normalmente suceden despues de los ataques pasivos. A diferencia de los ataques pasivos, estos sí intentan alterar los recursos del sistema o afectar su funcionamiento. Los ataques activos son resultado de una "exploración" llevada a cabo con los resultados de múltiples ataques pasivos. Se puede intentar tomar ventaja de un proceso o función en especifico y comprometer la integridad del sistema.
 
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/3.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Modificacion.png)
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/4.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Reenvio.png)
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/5.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Suplantacion.png)
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/6.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Interrupcion.png)
 
     
     

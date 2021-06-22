@@ -16,9 +16,9 @@ A este tipo de ataques se les denominan con dos términos, activos y pasivos. Lo
 
 ### Ataques pasivos
  
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/1.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Lectura.png)
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/2.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Trafico.png)
 
 ### Ataques activos
 

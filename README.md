@@ -191,7 +191,7 @@ En nuestra primera etapa se convierte nuestro texto plano a formato binario, se 
   
 #### Función para convertir texto plano a binario
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/functxtbin.png" width="400" height="400">
+<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/functxtbin.png" width="450" height="450">
   
 #### Función XOR
   

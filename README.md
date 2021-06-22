@@ -187,15 +187,15 @@ En nuestra primera etapa se convierte nuestro texto plano a formato binario, se 
 
 #### Función para generar llaves
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/funckey.png" width="300" height="250">
+<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/funckey.png" width="400" height="350">
   
 #### Función para convertir texto plano a binario
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/functxtbin.png" width="300" height="250">
+<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/functxtbin.png" width="400" height="350">
   
 #### Función XOR
   
-<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/funcxor.png" width="300" height="250">
+<img src="https://raw.githubusercontent.com/AlanMSP/SARV/main/funcxor.png" width="400" height="350">
 
 #### Operaciones de nuestra primera etapa
   

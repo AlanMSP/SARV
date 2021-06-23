@@ -241,3 +241,6 @@ Para simular al destinatario, realizamos de nuevo las operaciones anteriores y g
   
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/MAC.png)
   
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/MACejemplo.png)
+
+  

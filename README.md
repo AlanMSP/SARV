@@ -226,4 +226,3 @@ En nuestra tercer etapa, se realiza un XOR entre R3 y nuestra tercera llave alea
 ### Código completo
   
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Feistel.png)
-

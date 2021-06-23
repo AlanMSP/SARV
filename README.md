@@ -240,3 +240,4 @@ En este ejemplo obtenemos nuestra clave secreta por medio de un conteo de cierto
 Para simular al destinatario, realizamos de nuevo las operaciones anteriores y generamos un código de autentificación en una variable diferente, **_MAC_binR_**. Realizamos una comparación entre los dos códigos generados, **_MAC_** y **_MAC_binR_**. Si estos son iguales, se despliega un leyenda de que nuestro mensaje ha sido recibido sin modificaciones y se muestra el mensaje original sin el código de autentificación. 
   
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/MAC.png)
+  

@@ -235,9 +235,8 @@ Una vez que nuestro mensaje ha sido enviado y posteriormente recibido, el destin
   
 ### Código ejemplo en Python
   
-En este ejemplo obtenemos nuestra clave secreta por medio de un conteo de ciertos caracteres del mensaje (comas, puntos y vocales), los cuales se suman para obtener un valor entero, el cual se convierte a binario en un formato de 8 bits. El cual realiza una operación XOR (**_exor_**) con nuestra llave de 8 bits generada aleatoriamente, **_Key_**. El resultado de dicha operación es nuestro código de autentificación (**_Auth_**). Este código lo convertimos de binario a ASCII (**_char_**) y pegamos el caracter al final de nuestro mensaje a enviar. 
+En este ejemplo obtenemos nuestra clave secreta por medio de un conteo de ciertos caracteres del mensaje (comas, puntos y vocales), los cuales se suman para obtener un valor entero (**_clave)_**, el cual se convierte a binario en un formato de 8 bits (**_clave_bin_**). El cual realiza una operación XOR (**_exor_**) con nuestra llave de 8 bits generada aleatoriamente, **_Key_**. El resultado de dicha operación es nuestro código de autentificación (**_MAC_bin_**). Este código lo convertimos de binario a ASCII (**_MAC_**) y pegamos el caracter al final de nuestro mensaje a enviar. 
   
-Para simular al destinatario, realizamos de nuevo las operaciones anteriores y generamos un código de autentificación en una variable diferente, **_charRec_**. Realizamos una comparación entre los dos códigos generados, **_char_** y **_charRec_**. Si estos son iguales, se despliega un leyenda de que nuestro mensaje ha sido recibido sin modificaciones y se muestra el mensaje original sin el código de autentificación. 
+Para simular al destinatario, realizamos de nuevo las operaciones anteriores y generamos un código de autentificación en una variable diferente, **_MAC_binR_**. Realizamos una comparación entre los dos códigos generados, **_MAC_** y **_MAC_binR_**. Si estos son iguales, se despliega un leyenda de que nuestro mensaje ha sido recibido sin modificaciones y se muestra el mensaje original sin el código de autentificación. 
   
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/MAC.png)
-  

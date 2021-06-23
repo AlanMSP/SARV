@@ -229,7 +229,15 @@ En nuestra tercer etapa, se realiza un XOR entre R3 y nuestra tercera llave alea
   
 ## Código de autentificación de mensajes (MAC)
   
-### Código completo
+En esta técnica de MAC, tanto el remitente como el destinatario comparten una llave, **_Key_**. Por medio de una función, se obtiene una clave secreta de nuestro mensaje y se utilizará para realizar otra función con nuestra llave previamente compartida. Esto generará nuestro código de autentificación (MAC), el cual se añadirá a nuestro mensaje. 
+  
+Una vez que nuestro mensaje ha sido enviado y posteriormente recibido, el destinatario debe realizar el mismo proceso para obtener el código de autentificación, usando las mismas funciones tanto para obtener nuestra clave secreta del mensaje como la que se utiliza con la llave. Ya que ha generado el código de autentificación, se compara con el que viene añadido al mensaje. Si este es igual, significa el mensaje se ha entregado sin modificaciones. En caso contrario, el mensaje ha sido alterado
+  
+### Código ejemplo en Python
+  
+En este ejemplo obtenemos nuestra clave secreta por medio de un conteo de ciertos caracteres del mensaje (comas, puntos y vocales), los cuales se suman para obtener un valor entero, el cual se convierte a binario en un formato de 8 bits. El cual realiza una operación XOR (**_exor_**) con nuestra llave de 8 bits generada aleatoriamente, **_Key_**. El resultado de dicha operación es nuestro código de autentificación (**_Auth_**). Este código lo convertimos de binario a ASCII (**_char_**) y pegamos el caracter al final de nuestro mensaje a enviar. 
+  
+Para simular al destinatario, realizamos de nuevo las operaciones anteriores y generamos un código de autentificación en una variable diferente, **_charRec_**. Realizamos una comparación entre los dos códigos generados, **_char_** y **_charRec_**. Si estos son iguales, se despliega un leyenda de que nuestro mensaje ha sido recibido sin modificaciones y se muestra el mensaje original sin el código de autentificación. 
   
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/MAC.png)
   

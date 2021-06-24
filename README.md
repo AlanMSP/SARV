@@ -243,4 +243,9 @@ Para simular al destinatario, realizamos de nuevo las operaciones anteriores y g
   
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/MACejemplo.png)
 
+## Función HASH para la autentificación de mensajes
   
+
+  
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/HASH.png)
+

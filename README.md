@@ -247,4 +247,8 @@ Para simular al destinatario, realizamos de nuevo las operaciones anteriores y g
   
  Por HASH, se refiere a un proceso criptográfico que puede ser usado para validar la autenticidad e integridad de varios tipos de datos. Es muy usado en sistemas de autenticación para evitar almacenar contraseñas simples en las bases de datos, aunque tambien es usado para validar los contenidos de un archivo, documentos u otros tipos de datos. El uso incorrecto de funciones hash puede resultar en vulnerabilidades importantes pero en sí, no usar esta función para asegurar datos sensibles es mucho peor.
 
+El proceso para poder generar nuestro resultado, es en primer lugar, designar nuestro mensaje plano. En este caso, hemos elegido la palabra MUNDO y necesitamos descomponer sus carácteres en valores de 8 bits, para así poder manipular sus contenidos con operaciones XOR. Cómo primer paso en nuestro HASH, la etapa 1 del mismo siempre se inicializa en 0, para así poder realizar nuestro primer XOR entre Hash1 y B1 (letra M de MUNDO en binario) para así poder obtener nuestro H2. Acto seguido, a H2 se le hace una rotación de 1 bit a la izquierda, y con esta rotación aplicada podemos obtener H2. Este valor se usa en un XOR con la siguiente cadena de carácteres correspondientes a la letra U de MUNDO (B2). El resultado de dicha operación se designa como H3 y el proceso se repite las veces que sea necesario, dependiendo del número de bits que tenga el mensaje.
+  
+En el caso de HASH se cuenta con una llave, previamente compartida entre el emisor y el receptor, y está se utilizará para realizar la comparación posteriormente
+  
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/HASH.png)

@@ -245,7 +245,6 @@ Para simular al destinatario, realizamos de nuevo las operaciones anteriores y g
 
 ## Función HASH para la autentificación de mensajes
   
+ Por HASH, se refiere a un proceso criptográfico que puede ser usado para validar la autenticidad e integridad de varios tipos de datos. Es muy usado en sistemas de autenticación para evitar almacenar contraseñas simples en las bases de datos, aunque tambien es usado para validar los contenidos de un archivo, documentos u otros tipos de datos. El uso incorrecto de funciones hash puede resultar en vulnerabilidades importantes pero en sí, no usar esta función para asegurar datos sensibles es mucho peor.
 
-  
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/HASH.png)
-

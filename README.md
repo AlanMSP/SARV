@@ -294,10 +294,10 @@ Cada etapa toma como entrada el bloque de 512 bits que se está procesando (Yq) 
 También es importante mencionar que en cada etapa se utiliza una constante adicional (Kt) donde 0 < t < 79 especifica uno de los 80 pasos a lo largo de las cinco etapas. En realidad sólo se usan cuatro constantes distintas, a continuación, se muestran los valores en decimal y hexadecimal:
 
 Número de paso            Hexadecimal            toma parte entera de:
-0 < t < 19                Kt = 5A827999          2^30 x sqrt2
-20 < t < 39               Kt = 6ED9EBA1          2^30 x sqrt3
-40 < t <  59              Kt = 8F1BBCDC          2^30 x sqrt5
-60 < t < 79               Kt = CA62C1D6          2^30 x sqrt10
+<li>0 < t < 19                Kt = 5A827999          2^30 x sqrt2 </li>
+<li>20 < t < 39               Kt = 6ED9EBA1          2^30 x sqrt3 </li>
+<li>40 < t <  59              Kt = 8F1BBCDC          2^30 x sqrt5 </li>
+<li>60 < t < 79               Kt = CA62C1D6          2^30 x sqrt10 </li>
 
 La salida de la cuarta etapa (paso no. 80) es añadida a la entrada del primer paso en todo el proceso (CVq) para así generar (CVq+1). La suma se hace de manera independiente para cada una de las cinco palabras en el buffer con cada una de las palabras que corresponden en CVq, utilizando la suma módulo 2^32.
 

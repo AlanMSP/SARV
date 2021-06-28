@@ -258,3 +258,10 @@ El proceso para poder generar nuestro resultado, es en primer lugar, designar nu
 Una vez recorridos todos los bloques de nuestro texto plano separado, se obtiene un valor de 8 bits (H6), el cual sería nuestro HAS. En este método convencional, el HASH se codifica realizando una operación lógica XOR con nuestra llave compartida previamente y el resultado se añade a nuestro mensaje a enviar. 
   
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/HASH.png)
+  
+## Función HASH segura SHA-1
+  
+### Procesamiento SHA-1 de un bloque de 512 bits
+  
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/SHA-1.png)
+  

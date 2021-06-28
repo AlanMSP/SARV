@@ -262,6 +262,40 @@ Una vez recorridos todos los bloques de nuestro texto plano separado, se obtiene
 ## Función HASH segura SHA-1
   
 ### Procesamiento SHA-1 de un bloque de 512 bits
-  
+    
+  Este algoritmo toma como entrada un mensaje con una longitud máxima menor a 2^64 bits y produce como salida un resumen de ese mensaje con longitud de 160 bits. Este procesamiento se efectúa en bloques de 512 bits y se puede desglosar en los siguientes pasos:
+
+### Paso 1.- Adición de bits de relleno: El mensaje original es rellenado para que su longitud sea congruente, con 448 módulo 512. Esto significa que la longitud del mensaje relleno es 64 bits menos que un múltiplo de 512 bits. Este relleno es añadido aunque el mensaje concuerde con la longitud deseada. De esta forma el número d e bits que se utilizaron para rellenar se encuentra entre 1 y 512. El relleno está conformado por un único bit 1 seguido del número necesario de bits.
+
+
+### Paso 2.- Añadir longitud: Se añade un bloque de 64 bits al mensaje original, este bloque se trata como un entero sin signo de 64 bits y contiene la longitud del mensaje original antes del relleno. Esta inclusión de un valor de longitud brinda protección contra un ataque conocido cómo “ataque de relleno”.
+
+El resultado de estos dos primeros pasos nos brinda un mensaje que es un entero múltiple de 512 bits de longitud.
+
+### Paso 3.- Inicializar el buffer MD: Se utiliza un buffer de 160 bits para tener resultados intermedios y finales de la función HASH. Este buffer puede representarse como cinco registros de 32 bits (A, B, C, D, E). Estos registros se inicializaban a los siguientes enteros de 32 bits (valores hexadecimales):
+
+
+A = 67452301
+B = EFCDAB89
+C = 98BADCFE
+D = 10325476
+E = C3D2E1F0
+
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/SHA-1.png)
-  
+
+### Paso 4.- Procesar el mensaje en bloques de 512 bits (16 palabras). El módulo principal del algoritmo es llamado FUNCIÓN DE COMPRESIÓN, esta función está conformada por cuatro etapas de procesamiento de 20 pasos. Estas etapas funcionan de una manera muy similar pero cada una utiliza una función lógica primitiva diferente. (f1, f2, f3, f4)
+
+Cada etapa toma como entrada el bloque de 512 bits que se está procesando (Yq) y el valor de ABCDE del buffer de 160 bits y actualiza los contenidos del buffer. 
+
+También es importante mencionar que en cada etapa se utiliza una constante adicional (Kt) donde 0 < t < 79 especifica uno de los 80 pasos a lo largo de las cinco etapas. En realidad sólo se usan cuatro constantes distintas, a continuación, se muestran los valores en decimal y hexadecimal:
+
+Número de paso            Hexadecimal            toma parte entera de:
+0 < t < 19                Kt = 5A827999          2^30 x sqrt2
+20 < t < 39               Kt = 6ED9EBA1          2^30 x sqrt3
+40 < t <  59              Kt = 8F1BBCDC          2^30 x sqrt5
+60 < t < 79               Kt = CA62C1D6          2^30 x sqrt10
+
+La salida de la cuarta etapa (paso no. 80) es añadida a la entrada del primer paso en todo el proceso (CVq) para así generar (CVq+1). La suma se hace de manera independiente para cada una de las cinco palabras en el buffer con cada una de las palabras que corresponden en CVq, utilizando la suma módulo 2^32.
+
+### Paso 5.- Una vez que la totalidad de los bloques L de 512 bits han sido procesados, la salida del último estado (el L-ésimo) es el resumen del mensaje de 160 bits. El algoritmo tiene la propiedad por la cual cada bit del código HASH es una función de cada bit de la entrada. La repetición compleja de la función básica ft produce resultados con un grado de aleatoriedad muy bueno, es decir, es poco probable que dos mensajes tengan el mismo código HASH, la dificultad de dar con dos mensajes con el mismo resumen es del orden de 2^80, mientras que la dificultad de encontrar un mensaje con un resumen dado es del orden de 2^160 operaciones.
+

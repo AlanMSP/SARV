@@ -299,6 +299,8 @@ Número de paso            Hexadecimal            toma parte entera de:
 <li>40 < t <  59              Kt = 8F1BBCDC          2^30 x sqrt5 </li>
 <li>60 < t < 79               Kt = CA62C1D6          2^30 x sqrt10 </li>
 
+<br> 
+
 La salida de la cuarta etapa (paso no. 80) es añadida a la entrada del primer paso en todo el proceso (CVq) para así generar (CVq+1). La suma se hace de manera independiente para cada una de las cinco palabras en el buffer con cada una de las palabras que corresponden en CVq, utilizando la suma módulo 2^32.
 
 ### Paso 5 

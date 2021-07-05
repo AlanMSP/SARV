@@ -308,19 +308,29 @@ Una vez que la totalidad de los bloques L de 512 bits han sido procesados, la sa
 
 ## Algoritmo de cifrado de clave pública RSA
 
-El algoritmo
-
 ### Código completo en pyhton
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSAcode.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSA.png)
 
-### Ejemplo
-
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSAexample.png) 
 
 ## PGP - Cifrando y descifrando archivos 
 
 ### ¿Cómo instalar?
 
-PGP es una herramienta de cifrado y firmas digitales desarrollado por Werner Koch, que viene a ser un reemplazo del PGP pero con la principal diferencia que es software libre licenciado bajo la GPL.
+PGP es una herramienta de cifrado y firmas digitales desarrollado por Werner Koch, que viene a ser un reemplazo del PGP pero con la principal diferencia que es software libre licenciado bajo la GPL. Su versión más reciente puede ser descargada desde la consola de comandos de cualquier distribución Linux con el siguiente comando: 
 
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/GPG1.PNG)
+
+De manera normal, nosotros podemos generar un archivo (de cualquier tipo), en este caso crearemos un archivo .txt en nuestro directorio actual y procederemos a cifrarlo:
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/GPG3.PNG)
+
+Acto seguido, nos pedirá que ingresemos una "passphrase". Es importante hacer enfásis en que si esta frase es olvidada, el archivo no podrá ser descifrado. Esta frase se utilizará de la misma manera para poder descifrar los contenidos del archivo.
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/GPG4.PNG)
+
+Al ingresar la frase, junto con su confirmación, la versión del archivo cifrado se generará en el mismo directorio donde fue ejecutado el comando: 
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/GPG5.PNG)
+
+Si queremos visualizar el contenido de dicho archivo nos daremos cuenta que ya están cifrados y solo podrá ser descrifrado con el comando "gpg -d [ARCHIVO]" y la frase inicial que fue utilizada para su cifrado.

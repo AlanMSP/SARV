@@ -312,7 +312,7 @@ El algoritmo
 
 ### Código completo en pyhton
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSA.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSAcode.png)
 
 
 ## PGP - Cifrando y descifrando archivos 

@@ -323,3 +323,4 @@ El algoritmo
 ### ¿Cómo instalar?
 
 PGP es una herramienta de cifrado y firmas digitales desarrollado por Werner Koch, que viene a ser un reemplazo del PGP pero con la principal diferencia que es software libre licenciado bajo la GPL.
+

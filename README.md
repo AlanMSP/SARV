@@ -311,3 +311,10 @@ Una vez que la totalidad de los bloques L de 512 bits han sido procesados, la sa
 ### Código completo en pyhton
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSA.png)
+
+
+## PGP - Cifrando y descifrando archivos 
+
+### ¿Cómo instalar?
+
+PGP es una herramienta de cifrado y firmas digitales desarrollado por Werner Koch, que viene a ser un reemplazo del PGP pero con la principal diferencia que es software libre licenciado bajo la GPL.

@@ -308,6 +308,8 @@ Una vez que la totalidad de los bloques L de 512 bits han sido procesados, la sa
 
 ## Algoritmo de cifrado de clave pública RSA
 
+El algoritmo
+
 ### Código completo en pyhton
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSA.png)

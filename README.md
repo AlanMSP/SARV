@@ -314,6 +314,9 @@ El algoritmo
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSAcode.png)
 
+### Ejemplo
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSAexample.png)
 
 ## PGP - Cifrando y descifrando archivos 
 

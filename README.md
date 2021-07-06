@@ -308,6 +308,40 @@ Una vez que la totalidad de los bloques L de 512 bits han sido procesados, la sa
 
 ## Algoritmo de cifrado de clave pública RSA
 
+RSA trabaja con bloques de texto en formato de enteros (decimal), con una llave pública (**KU**, que se compone de _**e**_ y _**n**_) compartida previamente con el receptor, y con una llave privada del receptor (**KR**, compuesta por _**d**_ y _**n**_).  Para ello, debemos convertir nuestro texto plano a enteros. Esto podemos lograrlo de la siguiente manera: 
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/textodecimal.png)
+
+Nuestra variable _**mendec**_ representa la cadena de números enteros, con la cual trabajaremos para cifrar nuestro mensaje. Sin embargo, antes de poder cifrar nuestro mensaje, requerimos de otros valores que usaremos para generar nuestras llaves, que posteriormente se usarán para cifrar y descifrar nuestro mensaje. 
+
+Para el cifrado requerimos de 3 valores: _e, n y el decimal de nuestro mensaje_. Para calcular _e_, primero tenemos que calcular _n_. Para ello, se solicitan dos números primos al usuario (_p y q_). Estos tienen que ser diferentes entre sí. Para validar que sean primos, usamos la siguiente función:  
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/numprimo.png)
+
+Una vez que tenemos ambos números primos, los multiplicamos entre sí y el resultado será nuestro valor de _n_. Ahora, para calcular _e_, tenemos que hacer un par de pasos más. Primero que nada, tenemos que calcular _**φn**_ con: (_p - 1) x (q - 1)_, después tendremos que generar los números primos relativos entre 1 y _φn_ por medio de las siguientes funciones:
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/rangoprimo.png)
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/primosrel.png)
+
+Esta lista de números primos relativos que generamos nos servirá para darle un valor a _e_. En este caso lo hacemos de manera aleatoria, tomar un valor cualquiera de los que se encuentran dentro de la lista. Lo hacemos de la siguiente manera: 
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/e.png)
+
+Recuerda importar la librería para hacer esto, con _**import random**_ al principio de tu código. 
+
+Ahora si tenemos los valores necesarios para cifrar nuestro mensaje. La función de cifrado convierte nuestro texto plano a decimal, realiza operaciones de potencia con _**pow**_ y de módulo con _**%**_ con cada uno de los valores decimales que representan un caracter del mensaje original. Los valores generados se van guardando en una cadena en formato de caracter. Finalmente, la función regresa la nueva cadena de caracteres, que serían nuestro mensaje cifrado. A continuación podemos observar la función que realiza esto: 
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/cifradorsa.png)
+
+Ya que nuestro mensaje ha sido cifrado y enviado, nuestro receptor tiene que descifrar el mensaje utilizando un nuevo valor: _d_. Este nuevo valor es el inverso multiplicativo de _e_, el cual se toma también de los números primos relativos que generamos anteriormente. Al multiplicarse por _e_, debe realizarse la operación de mod (%) con φn y nos debe dejar un residuo igual a 1. Para calcularlo, utilizamos la siguiente función: 
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/invmul.png)
+
+Una vez que obtuvimos _d_, ya podemos descifrar nuestro mensaje recibido, utilizando la siguiente función: 
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/descifradorsa.png)
+
 ### Código completo en pyhton
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSAcode.png)

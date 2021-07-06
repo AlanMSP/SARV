@@ -385,3 +385,7 @@ Estos procesos se llevan a cabo en una implementación Kerberos
 5.- El usuario envía el ticket de servicio al servidor donde se encuentra el archivo, el servidor desencripta el mensaje con una llave secreta compartida con TGS.
 
 6.- El usuario lee el documento: Si las llaves secretas concuerdan, el servidor de archivos permite al usuario abrir el documento, el ticket de servicio determina cuanto tiempo el usuairo tiene acceso al archivo, una vez que éste expira, el usuario necesita volver a pasar por todo el proceso de solicitar acceso a Kerberos.
+
+## Tickets
+
+

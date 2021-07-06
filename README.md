@@ -310,13 +310,10 @@ Una vez que la totalidad de los bloques L de 512 bits han sido procesados, la sa
 
 ### Código completo en pyhton
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSAcode.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSA.png)
 
-### Ejemplo
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSAexample.png)
-
-## PGP - Cifrando y descifrando archivos 
+## GPG - Cifrando y descifrando archivos 
 
 ### ¿Cómo instalar?
 
@@ -337,3 +334,29 @@ Al ingresar la frase, junto con su confirmación, la versión del archivo cifrad
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/GPG5.PNG)
 
 Si queremos visualizar el contenido de dicho archivo nos daremos cuenta que ya están cifrados y solo podrá ser descrifrado con el comando "gpg -d [ARCHIVO]" y la frase inicial que fue utilizada para su cifrado.
+
+## Kerberos 
+
+### ¿Qué es Kerberos?
+
+En un sistema de computo, los usuarios validan sus identidades usando contraseñas, aunque eso es sencillo de implementar, siempre tendrá una falla de seguridad muy importante, si un hacker roba o crackea la contraseña, es muy fácil suplantar la identidad de la persona en cuestión. Los intrusos se logean al sistema como el usuario real y el sistema queda abierto a un ataque directo. 
+
+Kerberos es un protocolo de seguridad para aplicaciones cliente/servidor, este protocolo se basa en una combinación de llaves privadas de encriptación y tickets de acceso para verificar de manera segura la identidad del usuario. La principal función proteger las credenciales de los usuarios de ataques. Este protocolo protege las claves de secciones de la red inseguras, aún durante la autenticación de usuarios.
+
+
+Las principales fortalezas de Kerberos:
+
+- Las contraseñas de texto plano jamás son enviadas a través de una red insegura.
+- Todos los inicios de sesión cuentan con tres etapas de autenticación.
+- La encriptación protege todas las llaves de acceso y los tickets.
+- La autenticación es mutua, así que tanto los usuarios como los proveedores de un servicio están a salvo de ataques.
+
+### Los tres componentes de Kerberos
+
+Toda aplicación de Kerberos cuenta con un centro de distribución de llaves. Este centro actúa como un servicio de autenticación externo confiable y opera desde el servidor Kerberos y consta de los siguientes 3 componentes:
+
+- Servidor de Autenticación: Este servidor realiza una autenticación inicial cuando el usuario intenta acceder a un servicio. Se inicia el protocolo cuándo el usuario hcae una petición de acceso, esta solicitud está parcialmente encriptada con una llave secreta, la contraseña del usuario. Esta clave es un secreto compartido entre el servidor de autenticación y el usuario. En caso de que el servidor no pueda descifrar el mensaje, será porque el usuario no introdujo correctamente su contraseña. Si la solicitud es desencriptada, el servidor de autenticación genera un ticket-granting ticket (TGT
+- Servidor de Conseción de Tickets: Este servidor conecta al usuario con el servicio al que intenta acceder.
+- Servidor Kerberos (Base de Datos): Esta base de datos almacena los ID's y contraseñas de los usuarios verificados.
+
+Estos procesos se llevan a cabo en una implementación Kerberos 

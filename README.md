@@ -386,7 +386,9 @@ Estos procesos se llevan a cabo en una implementación Kerberos
 
 6.- El usuario lee el documento: Si las llaves secretas concuerdan, el servidor de archivos permite al usuario abrir el documento, el ticket de servicio determina cuanto tiempo el usuairo tiene acceso al archivo, una vez que éste expira, el usuario necesita volver a pasar por todo el proceso de solicitar acceso a Kerberos.
 
-## Tickets
+### Tickets
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/ticket.png)
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Proticket.png)
 

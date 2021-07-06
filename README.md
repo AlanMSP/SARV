@@ -369,7 +369,8 @@ Un TGT contiene una llave de sesión cliente/TGS, una fecha de expiración y la 
 
 ### ¿Cuáles son los pasos en la autenticación de Kerberos?
 
-El proceso de autenticación de Kerberos tiene distintas etapas.
+El proceso de autenticación de Kerberos tiene distintas etapas:
+
 1.- El usuario envía una solicitud al AS, cuando el AS recibe la solicitud, busca por la contraseña en la base de datos de Kerberos que corresponde al usuario, si el usuario introdujo correctamente la contraseña, el AS desencripta la solicitud.
 
 2.- El AS genera un TGT, despues de verificar al usuario, el AS envía un TGT.

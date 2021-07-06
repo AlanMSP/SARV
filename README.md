@@ -310,7 +310,7 @@ Una vez que la totalidad de los bloques L de 512 bits han sido procesados, la sa
 
 ### Código completo en pyhton
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSA.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSAcode.png)
 
 ### Ejemplo
 

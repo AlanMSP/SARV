@@ -359,8 +359,26 @@ Las principales fortalezas de Kerberos:
 
 Toda aplicación de Kerberos cuenta con un centro de distribución de llaves. Este centro actúa como un servicio de autenticación externo confiable y opera desde el servidor Kerberos y consta de los siguientes 3 componentes:
 
-- Servidor de Autenticación: Este servidor realiza una autenticación inicial cuando el usuario intenta acceder a un servicio. Se inicia el protocolo cuándo el usuario hcae una petición de acceso, esta solicitud está parcialmente encriptada con una llave secreta, la contraseña del usuario. Esta clave es un secreto compartido entre el servidor de autenticación y el usuario. En caso de que el servidor no pueda descifrar el mensaje, será porque el usuario no introdujo correctamente su contraseña. Si la solicitud es desencriptada, el servidor de autenticación genera un ticket-granting ticket (TGT
-- Servidor de Conseción de Tickets: Este servidor conecta al usuario con el servicio al que intenta acceder.
+- Servidor de Autenticación (AS): Este servidor realiza una autenticación inicial cuando el usuario intenta acceder a un servicio. Se inicia el protocolo cuándo el usuario hcae una petición de acceso, esta solicitud está parcialmente encriptada con una llave secreta, la contraseña del usuario. Esta clave es un secreto compartido entre el servidor de autenticación y el usuario. En caso de que el servidor no pueda descifrar el mensaje, será porque el usuario no introdujo correctamente su contraseña. Si la solicitud es desencriptada, el servidor de autenticación genera un ticket-granting ticket (TGT, ticket para brindar otro ticket) y lo encripta con la llave privada del Servidor de Conseción de Tickets. Esta llave es un secreto compartido entre el Servidor de Autenticación y el Servidor de Conseción de Tickets.
+
+Un TGT contiene una llave de sesión cliente/TGS, una fecha de expiración y la dirección IP del cliente. La dirección IP protege la conexión de ataques ubicados en algún punto medio de la conexión. Una vez que este TGT es generado, el AS lo envía al usuario.
+
+- Servidor de Conseción de Tickets (TGS): Este servidor conecta al usuario con el servicio al que intenta acceder. El usuario envía el TGT al TGS, si este ticket es válido y el usuario tiene los permisos para acceder al servicio, el TGS genera un ticket de servicio. Un ticket de servicio contiene el ID del usuario, su dirección en la red, periodo de validez y una llave de sesión cliente/servidor. El ticket de servicio es encriptado con una llave secreta compartida con el servidor de servicios.
+
 - Servidor Kerberos (Base de Datos): Esta base de datos almacena los ID's y contraseñas de los usuarios verificados.
 
+### ¿Cuáles son los pasos en la autenticación de Kerberos?
+
+El proceso de autenticación de Kerberos tiene distintas etapas.
+1.- El usuario envía una solicitud al AS, cuando el AS recibe la solicitud, busca por la contraseña en la base de datos de Kerberos que corresponde al usuario, si el usuario introdujo correctamente la contraseña, el AS desencripta la solicitud.
+
+2.- El AS genera un TGT, despues de verificar al usuario, el AS envía un TGT.
+
+3.- El usuario hace una solicitud con su TGT al TGS, además de eso, también especifica la razón por la cual quiere acceder al servidor (por ejemplo, leer un archivo), El TGS desencripta el ticket con la llave compartida con el AS.
+
+4.- El TGS genera un ticket de servicio y se lo envía al usuario, siempre y cuando el TGT haya sido válido.
 Estos procesos se llevan a cabo en una implementación Kerberos 
+
+5.- El usuario envía el ticket de servicio al servidor donde se encuentra el archivo, el servidor desencripta el mensaje con una llave secreta compartida con TGS.
+
+6.- El usuario lee el documento: Si las llaves secretas concuerdan, el servidor de archivos permite al usuario abrir el documento, el ticket de servicio determina cuanto tiempo el usuairo tiene acceso al archivo, una vez que éste expira, el usuario necesita volver a pasar por todo el proceso de solicitar acceso a Kerberos.

@@ -312,6 +312,9 @@ Una vez que la totalidad de los bloques L de 512 bits han sido procesados, la sa
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSA.png)
 
+### Ejemplo
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/RSAexample.png)
 
 ## PGP - Cifrando y descifrando archivos 
 

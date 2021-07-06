@@ -338,7 +338,7 @@ Ya que nuestro mensaje ha sido cifrado y enviado, nuestro receptor tiene que des
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/invmul.png)
 
-Una vez que obtuvimos _d_, ya podemos descifrar nuestro mensaje recibido, utilizando la siguiente función: 
+Una vez que obtuvimos _d_, ya podemos descifrar nuestro mensaje recibido (cifrado), utilizando la siguiente función: 
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/descifradorsa.png)
 

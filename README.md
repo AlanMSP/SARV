@@ -367,6 +367,8 @@ Un TGT contiene una llave de sesión cliente/TGS, una fecha de expiración y la 
 
 - Servidor Kerberos (Base de Datos): Esta base de datos almacena los ID's y contraseñas de los usuarios verificados.
 
+![image](https://github.com/AlanMSP/SARV/blob/main/Imagenes%20-%20Seguridad%20de%20redes(1).jpg)
+
 ### ¿Cuáles son los pasos en la autenticación de Kerberos?
 
 El proceso de autenticación de Kerberos tiene distintas etapas:

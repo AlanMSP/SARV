@@ -388,4 +388,5 @@ Estos procesos se llevan a cabo en una implementación Kerberos
 
 ## Tickets
 
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Proticket.png)
 

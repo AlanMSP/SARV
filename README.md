@@ -542,4 +542,25 @@ El modo túnel proporciona protección al paquete IP completo. Para conseguirlo,
 
 El modo túnel se usa cuando uno o los dos extremos de una SA es una pasarela de seguridad, como podría ser un cortafuegos o un _router_ que implementa IPSec. Con este modo, una serie de _hosts_, detrás de cortafuegos pueden estar implicados en comunicaciones seguras sin implementar IPSec. 
 
+
+### Cabecera de Autenticación
+
+La cabecera de autenticación porporciona compatibilidad para garantizar la integridad de los datos y la autenticación de paquetes IP. En la parte de los datos, garantiza que no ha habido algún tipo de modificación, por parte de la autenticación, un sistema o un dispositivo de red cuenta con la posibilidad de verificar que la aplicación o usuario es quien dice ser y filtra el tráfico de una manera adecuada, además de evitar desde raíz la suplantación de algún tipo de credencial en la red.
+
+La autenticación se basa en el código de autenticación de mensajes (MAC), teniendo como requisito que tanto destinatario como el enviador cuenten con una clave secreta previamente compartida:
+
+- Cabecera siguiente (8 bits): Identifica el tipo de cabecera que sigue inmediatamente despúes de la actual.
+- Longitud de carga útil (8 bits): Longitud de la cabecera de autenticación en palabras de 32 bits, menos dos.
+- Reservado (16 bits): Para usos posteriores.
+- Índice de parámetros de seguridad (32 bits): Identifica una asociación de seguridad existente.
+- Número de secuencia (32 bits): Un valor de un contador que se incrementa monotonicamente, que se trata más tarde.
+- Datos de autenticación variable (32 bits): Un campo cno una longitud variable que contiene el valor de comprobación de integridad (ICV) o el MAC para este paquete.
+- 
+
+
+[IMAGEN CABECERA IPsec]
+
+La siguiente imagen muestra dos posibles estructuras en las que se puede implementar el servicio de autenticación. En uno de los casos se proporciona autenticación directamente entre el servidor y las estaciones de trabajo. Mientras ambas entidades compartan una clave secreta protegida, cualquier interacción entre ellos es segura. Esto sería denominado como una implementación SA en modo transporte.
+
+En el otro ejemplo, una estación de trabajo externa se logra autenticar gracias al cortafuegos colectivo, dándole permisos de acceso para la red interna o porque el servidor al que se hizo la solicitud no cuenta con un servicio de autenticación, en este caso es una implementación SA en modo túnel.
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPsec.png)

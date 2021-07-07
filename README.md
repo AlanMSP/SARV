@@ -436,23 +436,33 @@ Los documentos más importantes por los cuales se compone IPSec son los RFC 2401
 
 Además de los RFC, el grupo de trabajo (SPWG) ha publicado una serie de borradores adicionales. Éstos documentos se dividen en 7 grupos: 
 
-- Arquitectura: 
-- Encapsulado de carga útil de seguridad (ESP):
-- Cabecera de autentificación (AH):
-- Algoritmo de cifrado:
-- Algoritmo de autentificación: 
-- Gestión de claves:
-- Dominio de interpretación (DOI):
+- **Arquitectura:** cubre los conceptos generales. 
+- **Encapsulado de carga útil de seguridad (ESP):** cubre el formato del paquete y los aspectos generales del uso de ESP. 
+- **Cabecera de autentificación (AH):** cubre el formato del paquete y los aspectos generales del uso de AH.
+- **Algoritmo de cifrado:** documentos que describen cómo se utilizan diferentes algoritmos de cifrado para ESP.
+- **Algoritmo de autentificación:** documentos que describen cómo se utilizan diferentes algoritmos de autentificación para AH.
+- **Gestión de claves:** documentos que describen los esquemas de gestión de claves.
+- **Dominio de interpretación (DOI):** contiene los valores necesarios para que los documentos se relacionen entre sí.
 
 #### Servicios IPSec
 
+IPSec proporciona servicios de seguridad en la capa IP, permitiendo que el sistema seleccione los protocolos de seguridad necesarios, determine los algoritmos a utilizar en los servicios y las claves criptográficas para proporcionarlos. Los servicios son: 
 
+- Control de acceso.
+- Integridad sin conexión.
+- Autentificación del origen de datos.
+- Rechazo de paquetes reenviados.
+- Cifrado.
+- Cifrado limitado del flujo del tráfico. 
 
-#### Asociaciones de seguridad
+#### Asociaciones de seguridad (SA)
 
+Una asociación de seguridad se identifica unívocamente por tres parámetros:
 
-- 
+- **Índice de parámetros de seguridad (SPI):** se transporta en cabeceras AH y ESP para permitir que el sistema receptor elija la SA.
+- **Dirección IP de destino:** actualmente sólo se permiten direcciones de un único destino (_unicast_); ésta es la dirección del destino final de la SA. 
+- **Identificador del protocolo de seguridad:** indica si la SA es de AH o ESP. 
+
+##### Parámetros de SA
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPsec.png)
-
-

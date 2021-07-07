@@ -463,7 +463,7 @@ Una asociación de seguridad se identifica unívocamente por tres parámetros:
 - **Dirección IP de destino:** actualmente sólo se permiten direcciones de un único destino (_unicast_); ésta es la dirección del destino final de la SA. 
 - **Identificador del protocolo de seguridad:** indica si la SA es de AH o ESP. 
 
-**Parámetros de SA**
+##### **Parámetros de SA**
 
 Una SA se define, normalmente, por los siguientes parámetros: 
 
@@ -476,7 +476,7 @@ Una SA se define, normalmente, por los siguientes parámetros:
 - **Modo de protocolo IPSec:** túnel, transporte o modo comodín. 
 - **MTU del camino:** cualquier unidad de transferencia máxima que se observe en el camino y variables de caducidad. 
 
-**Selectores de SA**
+##### **Selectores de SA**
 
 El medio por el que el tráfico IP se relaciona con SA específicas es la base de datos de políticas de seguridad (SPD). En su forma más simple, una SPD contiene entradas, cada una de las cuales define un subconjunto de tráfico IP y señala una SA para ese tráfico. Cada entrada de la SPD se define por un conjunto de valores de campos del protocolo IP y de protocolos de capas superiores, llamados _selectores_.
 
@@ -495,16 +495,14 @@ Los siguientes selectores determinan una entrada de la SPD:
 
 #### Modo transporte y modo túnel
 
-**Modo transporte** 
+##### **Modo transporte** 
 
 El modo transporte proporciona protección principalmente a los protocolos de capas superiores. Normalmente el modo transporte se usa para la comunicación extremo a extremo entre dos _hosts_. Cuando un _host_ ejecuta AH o ESP sobre IPv4, la carga útil consiste en los datos que habitualmente siguen a la cabecera IP. Para IPv6, la carga útil consiste en los datos que normalmente siguen a la cabecera IP y a cualquier cabecera de extensión de IPv6 que esté presente.
 
-**Modo túnel**
+##### **Modo túnel**
 
 El modo túnel proporciona protección al paquete IP completo. Para conseguirlo, el paquete completo más los campos de seguridad se tratan como carga útil de un paquete IP nuevo con una cabecera IP exterior. 
 
 El modo túnel se usa cuando uno o los dos extremos de una SA es una pasarela de seguridad, como podría ser un cortafuegos o un _router_ que implementa IPSec. Con este modo, una serie de _hosts_, detrás de cortafuegos pueden estar implicados en comunicaciones seguras sin implementar IPSec. 
-
-
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPsec.png)

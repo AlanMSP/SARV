@@ -463,6 +463,17 @@ Una asociación de seguridad se identifica unívocamente por tres parámetros:
 - **Dirección IP de destino:** actualmente sólo se permiten direcciones de un único destino (_unicast_); ésta es la dirección del destino final de la SA. 
 - **Identificador del protocolo de seguridad:** indica si la SA es de AH o ESP. 
 
-##### *Parámetros de SA*
+##### **Parámetros de SA**
+
+Una SA se define, normalmente, por los siguientes parámetros: 
+
+- **Contador de número de secuencia:** valor de 32 bits que se utiliza para generar el campo _número de secuencia_ en las cabeceras AH o ESP.
+- **Desbordamiento del contador de secuencia:** indicador que señala si el desbordamiento debería generar una acción de auditoría y evitar la transmisión de más paquetes en esta SA. 
+- **Ventana contra repeticiones:** determina si un paquete AH o ESP que llega es una repetición.
+- **Información AH:** algoritmo de autentificación, claves, tiempos de vida de las claves y parámetros relacionados que se usan con AH.
+- **Información ESP:** algoritmo de cifrado y autentificación, claves, valores de inicialización, tiempos de vida de las claves y parámetros relacionados que se usan con ESP.
+- **Tiempo de vida de la asociación de seguridad:** intervalo de tiempo después del cual una SA debe reemplazarse con una nueva SA o se debe finalizar. 
+- **Modo de protocolo IPSec:** túnel, transporte o modo comodín. 
+- **MTU del camino:** cualquier unidad de transferencia máxima que se observe en el camino y variables de caducidad. 
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPsec.png)

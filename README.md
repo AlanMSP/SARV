@@ -495,11 +495,11 @@ Los siguientes selectores determinan una entrada de la SPD:
 
 #### Modo transporte y modo túnel
 
-##### **Modo transporte** 
+**Modo transporte** 
 
 El modo transporte proporciona protección principalmente a los protocolos de capas superiores. Normalmente el modo transporte se usa para la comunicación extremo a extremo entre dos _hosts_. Cuando un _host_ ejecuta AH o ESP sobre IPv4, la carga útil consiste en los datos que habitualmente siguen a la cabecera IP. Para IPv6, la carga útil consiste en los datos que normalmente siguen a la cabecera IP y a cualquier cabecera de extensión de IPv6 que esté presente.
 
-##### **Modo túnel**
+**Modo túnel**
 
 El modo túnel proporciona protección al paquete IP completo. Para conseguirlo, el paquete completo más los campos de seguridad se tratan como carga útil de un paquete IP nuevo con una cabecera IP exterior. 
 

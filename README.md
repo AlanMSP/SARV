@@ -428,6 +428,6 @@ Estos procesos se llevan a cabo en una implementación Kerberos
 
 ## Seguridad IP 
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPSec.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPsec.png)
 
 

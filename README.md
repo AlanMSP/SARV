@@ -426,7 +426,44 @@ Estos procesos se llevan a cabo en una implementación Kerberos
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Proticket.png)
 
+
 ## Seguridad IP 
+
+IPsec surgió como un mecanismo resultante de los altos índices de ataques registrados por la CERT (Equipo de Respuesta a Emergencias en Computadores. Este tipo de ataques consistían principalmente en falsos IPs, en la que la persona malintencionada crea paquetes con direcciones IP falsas y se aprovechan de los mecanismos que toman las direcciones IP cómo método de autenticación, resultando en diferentes maneras de escucha y vigilancia del tráfico de red, incluida la conexión al sistema y los contenidos de las bases de datos. Gracias a esto surgió la implementación del ya muy famoso IPv6, que cuenta con procesos de autenticación y cifrado. 
+
+
+### Aplicaciones de IPsec   
+
+IPsec cuenta con la capacidad de garantizar la integridad de las comunicaciones de una LAN, de una WAN privada/pública y el Internet en general. Los casos de uso varían mucho de la infraestructura de la red, pero estos son los más comúnes:
+- Conexión segura entre redes pertenecientes a una misma compañía, organización, etc: La seguridad IP le permite a una empresa optar por sistemas y redes distribuidas sin el requisito de que estén en una misma localización física, ésto le abre las puertas a la organización de seguir actualizandose y tener una operación más global, menos aislada.
+- Acceso remoto a los recursos de la red: Al poder contar con una correcta gestión de los permisos necesarios para consumir diferentes recursos de la red, los usuarios finales pueden contar con una libertad de ubicación, sin la necesidad de temer por la integridad de las consultas realizadas.
+- Establecimiento de conexiones intranet/extranet: IPsec brinda un entorno muy seguro para que organizaciones colaboren de una manera muy eficiente en un enfoque privado, mientras que también brinda una estructura muy segura para realizar conexiones entre diferentes organizaciones.
+- Mejora de seguridad en comercio electrónico: A pesar de que los principales frameworks de comercio electrónico cuentan con mecanismos de seguridad integrados, el uso de IPsec es una variable a tomar en cuenta cuándo de un sitio seguro se trata.
+
+Estas características son reforzadas por el hecho de que IPsec tiene la posibilidad de de cifrar y/o autentificar el tráfico necesario en el nivel IP, resultando en una complitud de protección de un sistema distribuido.
+
+### Beneficios de IPsec   
+
+Los principales beneficios de IPsec son:
+
+- Cuando IPsec se implementa en un firewall o un router, todo el tráfico que se transmite por dicho componente estára protegido por el protocolo, es importante mencionar que sin importar la cantida de tráfico que pueda haber en una empresa u orgranización, jamás habrá algún tipo de costo por su operación y funcionamiento.
+- IPsec puede ser configurado ya que es posible obligar a que todo el tráfico entrante use IP, ya que el firewall es el único filtro entre la red y el internet.
+- IPsec está por debajo de la capa de transporte (TCP/UDP), gracias a esto, las aplicaciones no tienen en realidad una interacción con IPsec.
+- Los usuarios finales no necesitan algún tipo de capacitación para gozar de la protección que brinda IPsec, sus interacciones con el sistema están protegidas mientras ellos usan sus recursos de manera normal.
+- IPsec tiene la capacidad de proporcionar distintas configuraciones para distintos usuarios. Esto es muy útil cuando usuarios externos deben interactuar con algún componente del sistema, así como para establecer una subred virtual segura en una organización para apliaciones más aisladas.
+
+### Aplicaciones de Enrutamiento
+
+IPsec, además de brindar una gestión muy especifica y de cuidado de los permisos de usuario, también es fundamental en la arquitectura de enrutamiento necesaria para la correcta comunicación entre redes. Los casos de uso más comúnes de IPsec con un enfoque de enrutamiento son los siguientes:
+
+- Un anuncio de router (Un nuevo router fue incluido en la red) procede de un router previamente autorizado.
+- Un anuncio de un router vecino (un router está intentando compartir información con un router en otro dominio de enrutamiento) viene de un router autorizado.
+- Un mensaje re-enviado tiene como origen el router al que se envió el paquete inicial.
+- Una actualización de enrutamiento no se falsifica.
+
+Sería muy sencillo para un atacante interrumpir comunicaciones o altera el funcionamiento óptimo de la red. Los protocolos de enrutamiento como OSPF deberían ejecutarse por encima de los mecanismos implementados gracias a IPsec.
+
+
 
 ### Arquitectura de seguridad IP
 

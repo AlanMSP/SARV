@@ -448,12 +448,12 @@ Además de los RFC, el grupo de trabajo (SPWG) ha publicado una serie de borrado
 
 IPSec proporciona servicios de seguridad en la capa IP, permitiendo que el sistema seleccione los protocolos de seguridad necesarios, determine los algoritmos a utilizar en los servicios y las claves criptográficas para proporcionarlos. Los servicios son: 
 
-- Control de acceso.
-- Integridad sin conexión.
-- Autentificación del origen de datos.
-- Rechazo de paquetes reenviados.
-- Cifrado.
-- Cifrado limitado del flujo del tráfico. 
+- **Control de acceso.**
+- **Integridad sin conexión.**
+- **Autentificación del origen de datos.**
+- **Rechazo de paquetes reenviados.**
+- **Cifrado.**
+- **Cifrado limitado del flujo del tráfico.**
 
 #### Asociaciones de seguridad (SA)
 
@@ -463,6 +463,6 @@ Una asociación de seguridad se identifica unívocamente por tres parámetros:
 - **Dirección IP de destino:** actualmente sólo se permiten direcciones de un único destino (_unicast_); ésta es la dirección del destino final de la SA. 
 - **Identificador del protocolo de seguridad:** indica si la SA es de AH o ESP. 
 
-##### Parámetros de SA
+##### *Parámetros de SA*
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPsec.png)

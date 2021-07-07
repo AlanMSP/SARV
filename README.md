@@ -481,6 +481,8 @@ Además de los RFC, el grupo de trabajo (SPWG) ha publicado una serie de borrado
 - **Gestión de claves:** documentos que describen los esquemas de gestión de claves.
 - **Dominio de interpretación (DOI):** contiene los valores necesarios para que los documentos se relacionen entre sí.
 
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPSecarq.png)
+
 #### Servicios IPSec
 
 IPSec proporciona servicios de seguridad en la capa IP, permitiendo que el sistema seleccione los protocolos de seguridad necesarios, determine los algoritmos a utilizar en los servicios y las claves criptográficas para proporcionarlos. Los servicios son: 

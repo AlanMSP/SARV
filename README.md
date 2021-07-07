@@ -428,6 +428,31 @@ Estos procesos se llevan a cabo en una implementación Kerberos
 
 ## Seguridad IP 
 
+### Arquitectura de seguridad IP
+
+#### Documentos de IPSec
+
+Los documentos más importantes por los cuales se compone IPSec son los RFC 2401, 2402, 2406 y 2408, en los cuales se dan especificaciones y/o descripciones de la arquitectura, el cifrado, autentificación y cifrado de paquetes, y la capacidad de gestión de claves. Estas características de seguridad se implementan como cabeceras de extensión que le siguen a la cabecera IP principal. 
+
+Además de los RFC, el grupo de trabajo (SPWG) ha publicado una serie de borradores adicionales. Éstos documentos se dividen en 7 grupos: 
+
+- Arquitectura: 
+- Encapsulado de carga útil de seguridad (ESP):
+- Cabecera de autentificación (AH):
+- Algoritmo de cifrado:
+- Algoritmo de autentificación: 
+- Gestión de claves:
+- Dominio de interpretación (DOI):
+
+#### Servicios IPSec
+
+
+
+#### Asociaciones de seguridad
+
+
+- 
+
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPsec.png)
 
 

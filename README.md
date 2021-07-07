@@ -476,4 +476,35 @@ Una SA se define, normalmente, por los siguientes parámetros:
 - **Modo de protocolo IPSec:** túnel, transporte o modo comodín. 
 - **MTU del camino:** cualquier unidad de transferencia máxima que se observe en el camino y variables de caducidad. 
 
+##### **Selectores de SA**
+
+El medio por el que el tráfico IP se relaciona con SA específicas es la base de datos de políticas de seguridad (SPD). En su forma más simple, una SPD contiene entradas, cada una de las cuales define un subconjunto de tráfico IP y señala una SA para ese tráfico. Cada entrada de la SPD se define por un conjunto de valores de campos del protocolo IP y de protocolos de capas superiores, llamados _selectores_.
+
+Los siguientes selectores determinan una entrada de la SPD: 
+
+- **Dirección IP de destino:** puede ser una única dirección IP, una lista o rango de direcciones o una dirección comodín (máscara).
+- **Dirección IP fuente:** puede ser una única dirección IP, una lista o rango de direcciones o una dirección comodín (máscara).
+- **ID de usuario:** identificador de usuario obtenido del sistema operativo.
+- **Nivel de confidencialidad de los datos:** se usa para los sistemas que proporcionan seguridad en el flujo de información. 
+- **Protocolo de la capa de transporte:** se obtiene del protocolo IPv4 o del campo _siguiente cabecera_ de IPv6.
+- **Protocolo IPSec:** se obtiene del protocolo IPv4 o del campo _siguiente cabecera_ de IPv6.
+- **Puertos fuente y destino:** pueden ser valores individuales de puertos TCP o UDP, una lista enumerada de puertos o un puerto comodín.
+- **Clase IPv6:** se obtiene de la cabecera de IPv6. 
+- **Etiqueta de flujo IPv6:** se obtiene de la cabecera de IPv6. 
+- **Tipo de servicio IPv4:** se obtiene de la cabecera de IPv4.
+
+#### Modo transporte y modo túnel
+
+##### **Modo transporte** 
+
+El modo transporte proporciona protección principalmente a los protocolos de capas superiores. Normalmente el modo transporte se usa para la comunicación extremo a extremo entre dos _hosts_. Cuando un _host_ ejecuta AH o ESP sobre IPv4, la carga útil consiste en los datos que habitualmente siguen a la cabecera IP. Para IPv6, la carga útil consiste en los datos que normalmente siguen a la cabecera IP y a cualquier cabecera de extensión de IPv6 que esté presente.
+
+##### **Modo túnel**
+
+El modo túnel proporciona protección al paquete IP completo. Para conseguirlo, el paquete completo más los campos de seguridad se tratan como carga útil de un paquete IP nuevo con una cabecera IP exterior. 
+
+El modo túnel se usa cuando uno o los dos extremos de una SA es una pasarela de seguridad, como podría ser un cortafuegos o un _router_ que implementa IPSec. Con este modo, una serie de _hosts_, detrás de cortafuegos pueden estar implicados en comunicaciones seguras sin implementar IPSec. 
+
+
+
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPsec.png)

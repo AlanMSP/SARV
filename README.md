@@ -496,7 +496,7 @@ IPSec proporciona servicios de seguridad en la capa IP, permitiendo que el siste
 
 #### Asociaciones de seguridad (SA)
 
-Una asociación de seguridad se identifica unívocamente por tres parámetros:
+Una asociación es una relación unidireccional entre un emisor y un receptor que ofrece servicios de seguridad al tráfico que se transporta. Una asociación de seguridad se identifica unívocamente por tres parámetros:
 
 - **Índice de parámetros de seguridad (SPI):** se transporta en cabeceras AH y ESP para permitir que el sistema receptor elija la SA.
 - **Dirección IP de destino:** actualmente sólo se permiten direcciones de un único destino (_unicast_); ésta es la dirección del destino final de la SA. 

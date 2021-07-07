@@ -426,3 +426,8 @@ Estos procesos se llevan a cabo en una implementación Kerberos
 
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Proticket.png)
 
+## Seguridad IP 
+
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPSec.png)
+
+

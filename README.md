@@ -427,7 +427,7 @@ Estos procesos se llevan a cabo en una implementación Kerberos
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Proticket.png)
 
 
-## Seguridad IP 
+## Seguridad IP (IPSec)
 
 IPsec surgió como un mecanismo resultante de los altos índices de ataques registrados por la CERT (Equipo de Respuesta a Emergencias en Computadores. Este tipo de ataques consistían principalmente en falsos IPs, en la que la persona malintencionada crea paquetes con direcciones IP falsas y se aprovechan de los mecanismos que toman las direcciones IP cómo método de autenticación, resultando en diferentes maneras de escucha y vigilancia del tráfico de red, incluida la conexión al sistema y los contenidos de las bases de datos. Gracias a esto surgió la implementación del ya muy famoso IPv6, que cuenta con procesos de autenticación y cifrado. 
 

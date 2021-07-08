@@ -69,9 +69,9 @@ Algunos ejemplos serían:
 Este tipo de funcionalidades pueden ser implementadas en la capa del modelo OSI más adecuadas.
 <br>
 <br>
-<li>Crifrado: El uso de algoritmos para convertir la información  a inteligible y legible, gracias al resultado del algoritmo.
-<li>Firma digital: Datos adjutos a una unidad de datos para simular la función de una llave.
-<li>Control de acceso: Mecanismos que refuerzan los derechos de un usuario.
+<li>Crifrado: El uso de algoritmos para convertir la información a inteligible y legible, gracias al resultado del algoritmo los carácteres sufren un proceso de transformación.
+<li>Firma digital: Proceso que se encarga de autenticar al emisor de un mensaje y confirmar que ni el mensaje ni las credenciales han sido alterados.
+<li>Control de acceso: Mecanismos que refuerzan los derechos de un usuario y la gestión de sus permisos.
 <li>Integridad de los datos: Mecanismos empleados para confirmar la falta de modificaciones no autorizadas al archivo base.
 <li>Intercambio de autentificación: Mecanismo diseñado para comprobar la identidad de una entidad gracias al intercambio de información.
 <li>Relleno de tráfico: Se refiere a la inserción de bits en un flujo de datos para frustrar los intentos de análisis de tráfico.

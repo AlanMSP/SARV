@@ -435,7 +435,7 @@ A grandes rasgos, IPsec tiene tres pilares fundamentales en sus implementaciones
 
 - Autentificación: Garantiza que un paquete recibido cuenta con una integridad intacta gracias a que cuenta con la "identificación" por parte del remitente, en la información porporcionada por la cabecera. Además de verificar que, en el transcurso de la transmisión, no hubo algún tipo de intercepción y posterior edición de los contenidos.
 - Confidencialidad: Permite a las diferentes partes que participan en el envío de datos cifrar los mensajes para así evitar la participación de terceros. 
-- Gestión de claves: Se encarga del intercambio seguro de claves.
+- Gestión de claves: Se encarga del intercambio seguro de claves. Así como su gestión enfocada al manejo de credenciales necesarias para el uso de recursos de la implementación.
 
 
 ### Aplicaciones de IPsec   

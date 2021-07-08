@@ -564,9 +564,7 @@ La autenticación se basa en el código de autenticación de mensajes (MAC), ten
 - Número de secuencia (32 bits): Un valor de un contador que se incrementa monotonicamente, que se trata más tarde.
 - Datos de autenticación variable (32 bits): Un campo cno una longitud variable que contiene el valor de comprobación de integridad (ICV) o el MAC para este paquete.
  
-
-
-[IMAGEN CABECERA IPsec]
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/Cabecera%20IPSec.jpg)
 
 La siguiente imagen muestra dos posibles estructuras en las que se puede implementar el servicio de autenticación. En uno de los casos se proporciona autenticación directamente entre el servidor y las estaciones de trabajo. Mientras ambas entidades compartan una clave secreta protegida, cualquier interacción entre ellos es segura. Esto sería denominado como una implementación SA en modo transporte.
 

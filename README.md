@@ -310,7 +310,7 @@ Una vez que la totalidad de los bloques L de 512 bits han sido procesados, la sa
 
 RSA trabaja con bloques de texto en formato de enteros (decimal), con una llave pública (**KU**, que se compone de _**e**_ y _**n**_) compartida previamente con el receptor, y con una llave privada del receptor (**KR**, compuesta por _**d**_ y _**n**_).  Para ello, debemos convertir nuestro texto plano a enteros. Esto podemos lograrlo de la siguiente manera: 
 
-![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/textodecimal.png)
+![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/textodecimal.png) 
 
 Nuestra variable _**mendec**_ representa la cadena de números enteros, con la cual trabajaremos para cifrar nuestro mensaje. Sin embargo, antes de poder cifrar nuestro mensaje, requerimos de otros valores que usaremos para generar nuestras llaves, que posteriormente se usarán para cifrar y descifrar nuestro mensaje. 
 

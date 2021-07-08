@@ -431,6 +431,12 @@ Estos procesos se llevan a cabo en una implementación Kerberos
 
 IPsec surgió como un mecanismo resultante de los altos índices de ataques registrados por la CERT (Equipo de Respuesta a Emergencias en Computadores. Este tipo de ataques consistían principalmente en falsos IPs, en la que la persona malintencionada crea paquetes con direcciones IP falsas y se aprovechan de los mecanismos que toman las direcciones IP cómo método de autenticación, resultando en diferentes maneras de escucha y vigilancia del tráfico de red, incluida la conexión al sistema y los contenidos de las bases de datos. Gracias a esto surgió la implementación del ya muy famoso IPv6, que cuenta con procesos de autenticación y cifrado. 
 
+A grandes rasgos, IPsec tiene tres pilares fundamentales en sus implementaciones. La correcta configuración de estos tres componentes resultan en una protección que rebasa las capas de protocolos. Implementando la seguridad en el nivel IP, una organización puede contar con una red segura para aplicaciones con o sin mecanismos de seguridad. Los tres pilares antes mencionados son los siguientes: 
+
+- Autentificación: Garantiza que un paquete recibido cuenta con una integridad intacta gracias a que cuenta con la "identificación" por parte del remitente, en la información porporcionada por la cabecera. Además de verificar que, en el transcurso de la transmisión, no hubo algún tipo de intercepción y posterior edición de los contenidos.
+- Confidencialidad: Permite a las diferentes partes que participan en el envío de datos cifrar los mensajes para así evitar la participación de terceros. 
+- Gestión de claves: Se encarga del intercambio seguro de claves.
+
 
 ### Aplicaciones de IPsec   
 
@@ -557,7 +563,7 @@ La autenticación se basa en el código de autenticación de mensajes (MAC), ten
 - Índice de parámetros de seguridad (32 bits): Identifica una asociación de seguridad existente.
 - Número de secuencia (32 bits): Un valor de un contador que se incrementa monotonicamente, que se trata más tarde.
 - Datos de autenticación variable (32 bits): Un campo cno una longitud variable que contiene el valor de comprobación de integridad (ICV) o el MAC para este paquete.
-- 
+ 
 
 
 [IMAGEN CABECERA IPsec]

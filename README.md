@@ -570,4 +570,5 @@ La autenticación se basa en el código de autenticación de mensajes (MAC), ten
 La siguiente imagen muestra dos posibles estructuras en las que se puede implementar el servicio de autenticación. En uno de los casos se proporciona autenticación directamente entre el servidor y las estaciones de trabajo. Mientras ambas entidades compartan una clave secreta protegida, cualquier interacción entre ellos es segura. Esto sería denominado como una implementación SA en modo transporte.
 
 En el otro ejemplo, una estación de trabajo externa se logra autenticar gracias al cortafuegos colectivo, dándole permisos de acceso para la red interna o porque el servidor al que se hizo la solicitud no cuenta con un servicio de autenticación, en este caso es una implementación SA en modo túnel.
+
 ![image](https://raw.githubusercontent.com/AlanMSP/SARV/main/IPsec.png)
